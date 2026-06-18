@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Application Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 500px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            color: navy;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .gender input {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        .buttons input {
+            width: 120px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>College Application Form</h2>
+
+        <form>
+
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Date of Birth</label>
+            <input type="date" required>
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+
+            <label>Address</label>
+            <textarea rows="4" placeholder="Enter your address"></textarea>
+
+            <label>Gender</label>
+            <div class="gender">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Other
+            </div>
+
+            <br>
+
+            <label>Course Applied For</label>
+            <select>
+                <option>Select Course</option>
+                <option>BCA</option>
+                <option>B.Sc Computer Science</option>
+                <option>B.Com</option>
+                <option>BBA</option>
+                <option>B.Tech</option>
+            </select>
+
+            <label>12th Percentage</label>
+            <input type="number" placeholder="Enter percentage" min="0" max="100">
+
+            <label>Upload Mark Sheet</label>
+            <input type="file">
+
+            <div class="buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
